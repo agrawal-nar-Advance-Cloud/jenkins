@@ -1,3 +1,4 @@
 ---
 # tasks file for jenkins
 - include: ssl.yml
+- include: install_docker.yml

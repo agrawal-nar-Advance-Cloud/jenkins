@@ -12,6 +12,11 @@
     state: latest
   become: true
 
+- name: install maven
+  apt:
+    name: maven
+  become: true
+
 - name: ensure the jenkins apt repository key is installed
   apt_key:
    url: https://pkg.jenkins.io/debian-stable/jenkins.io.key
@@ -100,7 +105,7 @@
   when: staging_cert|bool == true
 
 - name: create letsencrypt certificate
-  command: "sudo certbot --nginx -m {{ certbot_email }} -d {{ jenkins_subDomain }} --agree-tos --reinstall --redirect"
+  command: "sudo certbot --nginx -m {{ certbot_email }} -d {{ jenkins_subDomain }} --agree-tos --reinstall --redirect "
   when: staging_cert|bool == false
 
 - name: Print password

@@ -1,5 +1,2 @@
 ---
 # vars file for jenkins
-
-jenkins_subDomain: "jenkins.nareshagrawal.me"
-certbot_email: "joblender31@gmail.com"
