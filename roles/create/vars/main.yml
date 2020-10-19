@@ -17,5 +17,5 @@ igw_name: "IGW"
 route_name: "Jenkins_Route"
 
 securitygroup_name: "Jenkins_Security_Group"
-jenkins_subDomain: "jenkins.nareshagrawal.me"
+
 hosted_zone_id: "Z0709337QHQ831WTBIC9"
