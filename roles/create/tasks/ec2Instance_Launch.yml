@@ -10,7 +10,7 @@
 - name: Create a Ec2 Instance
   ec2_instance:
     key_name: "{{ keypair.key.name  }}"
-    instance_type : t2.micro
+    instance_type : "{{ instance_type }}"
     image_id: ami-0817d428a6fb68645
     security_group: "{{ security_group.group_id }}"
     vpc_subnet_id: "{{ subnet.subnet.id }}"
