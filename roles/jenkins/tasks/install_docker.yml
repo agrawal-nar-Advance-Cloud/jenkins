@@ -22,9 +22,3 @@
     sudo groupadd docker
     sudo usermod -aG docker jenkins
     sudo chmod 777 /var/run/docker.sock
-
-
-
-
-- name: Print password
-  command: "sudo cat /var/lib/jenkins/secrets/initialAdminPassword"
