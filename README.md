@@ -42,7 +42,7 @@ Change variables value according to need
 
 ### Destroy Instruction 
 ```
- $ ansible-playbook terminate.yml -v --extra-var "elastic_ip=<elastic_ip> instance_type=<nstance_type> jenkins_subDomain=<jenkins_domain>"
+ $ ansible-playbook terminate.yml -v --extra-var "elastic_ip=<elastic_ip> instance_type=<instance_type> jenkins_subDomain=<jenkins_domain>"
 ```
 
 ### Set up credentials in Jenkins server
